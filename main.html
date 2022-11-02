@@ -6,54 +6,106 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 </head>
-<body>
-	<div class="content__page">
-		<div class="page" id="page-rateBot">
-			<p class="main__Title">This Bot was made by</p>
-			<p class="main__Text author">Human being</p>
-			<div class="main__gif-container">
-				<img class="main__gif" src="content/gif/rate.gif">
-			</div>
-			<div class="main__rate-container">
-				<p class="main__Text">Please rate this bot</p>
-				<div class="main__rate-itemContainer" id="main-rate-stars">
-					<div class="main__rate-star">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="90" height="90" viewBox="0 0 90 90">
-							<path d="M 47.755 3.765 l 11.525 23.353 c 0.448 0.907 1.313 1.535 2.314 1.681 l 25.772 3.745 c 2.52 0.366 3.527 3.463 1.703 5.241 L 70.42 55.962 c -0.724 0.706 -1.055 1.723 -0.884 2.72 l 4.402 25.667 c 0.431 2.51 -2.204 4.424 -4.458 3.239 L 46.43 75.47 c -0.895 -0.471 -1.965 -0.471 -2.86 0 L 20.519 87.588 c -2.254 1.185 -4.889 -0.729 -4.458 -3.239 l 4.402 -25.667 c 0.171 -0.997 -0.16 -2.014 -0.884 -2.72 L 0.931 37.784 c -1.824 -1.778 -0.817 -4.875 1.703 -5.241 l 25.772 -3.745 c 1.001 -0.145 1.866 -0.774 2.314 -1.681 L 42.245 3.765 C 43.372 1.481 46.628 1.481 47.755 3.765 z"/>
-						</svg>
+<body class="theme-dark">
+	<header class="content__header">
+		<img class="content__header-logo" src="content/img/project-logo.jpg">
+		<p class="content__header-projectName">Durger King</p>
+	</header>
+	<main class="content__page">
+		<p class="order__Text" id="makeOrderText">Сделайте ваш заказ в <span>Project Name</span></p>
+		<p class="order__Title">Еда</p>
+		<div class="order__cards">
+			<div class="order__card">
+				<div class="order__card-Image-container">
+					<img class="order__card-Image" src="content/img/products/pita.png">
+				</div>
+				<div class="order__badges">
+					<div class="order__badge">
+						<img src="content/img/products/tomato.png">
 					</div>
-					<div class="main__rate-star">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="90" height="90" viewBox="0 0 90 90">
-							<path d="M 47.755 3.765 l 11.525 23.353 c 0.448 0.907 1.313 1.535 2.314 1.681 l 25.772 3.745 c 2.52 0.366 3.527 3.463 1.703 5.241 L 70.42 55.962 c -0.724 0.706 -1.055 1.723 -0.884 2.72 l 4.402 25.667 c 0.431 2.51 -2.204 4.424 -4.458 3.239 L 46.43 75.47 c -0.895 -0.471 -1.965 -0.471 -2.86 0 L 20.519 87.588 c -2.254 1.185 -4.889 -0.729 -4.458 -3.239 l 4.402 -25.667 c 0.171 -0.997 -0.16 -2.014 -0.884 -2.72 L 0.931 37.784 c -1.824 -1.778 -0.817 -4.875 1.703 -5.241 l 25.772 -3.745 c 1.001 -0.145 1.866 -0.774 2.314 -1.681 L 42.245 3.765 C 43.372 1.481 46.628 1.481 47.755 3.765 z"/>
-						</svg>
-					</div>
-					<div class="main__rate-star">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="90" height="90" viewBox="0 0 90 90">
-							<path d="M 47.755 3.765 l 11.525 23.353 c 0.448 0.907 1.313 1.535 2.314 1.681 l 25.772 3.745 c 2.52 0.366 3.527 3.463 1.703 5.241 L 70.42 55.962 c -0.724 0.706 -1.055 1.723 -0.884 2.72 l 4.402 25.667 c 0.431 2.51 -2.204 4.424 -4.458 3.239 L 46.43 75.47 c -0.895 -0.471 -1.965 -0.471 -2.86 0 L 20.519 87.588 c -2.254 1.185 -4.889 -0.729 -4.458 -3.239 l 4.402 -25.667 c 0.171 -0.997 -0.16 -2.014 -0.884 -2.72 L 0.931 37.784 c -1.824 -1.778 -0.817 -4.875 1.703 -5.241 l 25.772 -3.745 c 1.001 -0.145 1.866 -0.774 2.314 -1.681 L 42.245 3.765 C 43.372 1.481 46.628 1.481 47.755 3.765 z"/>
-						</svg>
-					</div>
-					<div class="main__rate-star">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="90" height="90" viewBox="0 0 90 90">
-							<path d="M 47.755 3.765 l 11.525 23.353 c 0.448 0.907 1.313 1.535 2.314 1.681 l 25.772 3.745 c 2.52 0.366 3.527 3.463 1.703 5.241 L 70.42 55.962 c -0.724 0.706 -1.055 1.723 -0.884 2.72 l 4.402 25.667 c 0.431 2.51 -2.204 4.424 -4.458 3.239 L 46.43 75.47 c -0.895 -0.471 -1.965 -0.471 -2.86 0 L 20.519 87.588 c -2.254 1.185 -4.889 -0.729 -4.458 -3.239 l 4.402 -25.667 c 0.171 -0.997 -0.16 -2.014 -0.884 -2.72 L 0.931 37.784 c -1.824 -1.778 -0.817 -4.875 1.703 -5.241 l 25.772 -3.745 c 1.001 -0.145 1.866 -0.774 2.314 -1.681 L 42.245 3.765 C 43.372 1.481 46.628 1.481 47.755 3.765 z"/>
-						</svg>
-					</div>
-					<div class="main__rate-star">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="90" height="90" viewBox="0 0 90 90">
-							<path d="M 47.755 3.765 l 11.525 23.353 c 0.448 0.907 1.313 1.535 2.314 1.681 l 25.772 3.745 c 2.52 0.366 3.527 3.463 1.703 5.241 L 70.42 55.962 c -0.724 0.706 -1.055 1.723 -0.884 2.72 l 4.402 25.667 c 0.431 2.51 -2.204 4.424 -4.458 3.239 L 46.43 75.47 c -0.895 -0.471 -1.965 -0.471 -2.86 0 L 20.519 87.588 c -2.254 1.185 -4.889 -0.729 -4.458 -3.239 l 4.402 -25.667 c 0.171 -0.997 -0.16 -2.014 -0.884 -2.72 L 0.931 37.784 c -1.824 -1.778 -0.817 -4.875 1.703 -5.241 l 25.772 -3.745 c 1.001 -0.145 1.866 -0.774 2.314 -1.681 L 42.245 3.765 C 43.372 1.481 46.628 1.481 47.755 3.765 z"/>
-						</svg>
+					<div class="order__badge">
+						<img src="content/img/products/meat.png">
 					</div>
 				</div>
-				<div class="main__rate-itemContainer">
-					<div class="main__rate-btn">Rate</div>
+				<p class="order__card-Name">Лаваш</p>
+				<p class="order__card-Price color-secondary">28.000UZS</p>
+				<div class="order__card-BTNs">
+					<div class="order__card-BTN mainBtn">Добавить</div>
+					<div class="order__card-BTN hiden additBtn">+</div>
+					<input class="order__card-input hiden additBtn" type="number" value="0">
 				</div>
 			</div>
-			
+			<div class="order__card">
+				<div class="order__card-Image-container">
+					<img class="order__card-Image" src="content/img/products/pita.png">
+				</div>
+				<div class="order__badges">
+					<div class="order__badge">
+						<img src="content/img/products/cheese.png">
+					</div>
+					<div class="order__badge">
+						<img src="content/img/products/tomato.png">
+					</div>
+					<div class="order__badge">
+						<img src="content/img/products/meat.png">
+					</div>
+				</div>
+				<p class="order__card-Name">Лаваш с сыром</p>
+				<p class="order__card-Price color-secondary">28.000UZS</p>
+				<div class="order__card-BTNs">
+					<div class="order__card-BTN mainBtn">Добавить</div>
+					<div class="order__card-BTN hiden additBtn">+</div>
+					<input class="order__card-input hiden additBtn" type="number" value="0">
+				</div>
+			</div>
+			<div class="order__card">
+				<div class="order__card-Image-container">
+					<img class="order__card-Image" src="content/img/products/hamburger.png">
+				</div>
+				<div class="order__badges">
+					<div class="order__badge">
+						<img src="content/img/products/tomato.png">
+					</div>
+					<div class="order__badge">
+						<img src="content/img/products/meat.png">
+					</div>
+				</div>
+				<p class="order__card-Name">Гамбургер</p>
+				<p class="order__card-Price color-secondary">24.000UZS</p>
+				<div class="order__card-BTNs">
+					<div class="order__card-BTN mainBtn">Добавить</div>
+					<div class="order__card-BTN hiden additBtn">+</div>
+					<input class="order__card-input hiden additBtn" type="number" value="0">
+				</div>
+			</div>
+			<div class="order__card">
+				<div class="order__card-Image-container">
+					<img class="order__card-Image" src="content/img/products/hamburger.png">
+				</div>
+				<div class="order__badges">
+					<div class="order__badge">
+						<img src="content/img/products/cheese.png">
+					</div>
+					<div class="order__badge">
+						<img src="content/img/products/tomato.png">
+					</div>
+					<div class="order__badge">
+						<img src="content/img/products/meat.png">
+					</div>
+				</div>
+				<p class="order__card-Name">Гамбургер</p>
+				<p class="order__card-Price color-secondary">24.000UZS</p>
+				<div class="order__card-BTNs">
+					<div class="order__card-BTN mainBtn">Добавить</div>
+					<div class="order__card-BTN hiden additBtn">+</div>
+					<input class="order__card-input hiden additBtn" type="number" value="0">
+				</div>
+			</div>
 		</div>
-<!-- 		<div class="page" id="page-main">
-			
-		</div> -->
-		<div class="content__btn">Back</div>
-	</div>
+
+	</main>
+
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
