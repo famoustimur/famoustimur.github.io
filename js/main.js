@@ -16,7 +16,7 @@ function isEmptyOrderListFunc(){
 
 $('#makeOrderText span').text(projectName);
 console.log(webapp);
-$('body').css('background-color', webapp.backgroundColor);
+$('.content__page').css('background-color', webapp.backgroundColor);
 $('header.content__header, .order__card-BTN, .content__BTN').css('background-color', webapp.MainButton.color);
 $('.order__badge, .order__card-input').css('background-color', `${webapp.MainButton.color}40`);
 $('p.content__header-projectName, .order__card-BTN, .content__BTN').css('color', webapp.MainButton.textColor);
