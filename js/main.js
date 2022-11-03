@@ -14,13 +14,15 @@ function isEmptyOrderListFunc(){
 	return true;
 }
 
-$('#makeOrderText span').text(projectName);
+$('#makeOrderText span, p.content__header-projectName').text(projectName);
 console.log(webapp);
-$('.content__page').css('background-color', webapp.backgroundColor);
+$('.content__page, .content__header-menu-container').css('background-color', webapp.backgroundColor);
 $('header.content__header, .order__card-BTN, .content__BTN').css('background-color', webapp.MainButton.color);
-$('.order__badge, .order__card-input').css('background-color', `${webapp.MainButton.color}40`);
+$('.order__badge, .order__card-input').css('background-color', `${webapp.MainButton.color}80`);
 $('p.content__header-projectName, .order__card-BTN, .content__BTN').css('color', webapp.MainButton.textColor);
 
+if(webapp.colorScheme != 'theme-dark')
+	$('body').removeClass('theme-dark theme-light').addClass(`theme-${webapp.colorScheme}`);
 
 $('.order__card-BTN').on('click', function(){
 	if($(this).text() == '-'){
@@ -35,6 +37,7 @@ $('.order__card-BTN').on('click', function(){
 			if(isEmptyOrderListFunc()){
 				isEmptyOrderList = true;
 				$('.content__BTN').addClass('hiden');
+				$('.content__page').removeClass('buttonVisible');
 			}
 			$(this).parent().children().removeClass('small').addClass('hiden');
 			$(this).removeClass('hiden');
@@ -48,7 +51,8 @@ $('.order__card-BTN').on('click', function(){
 	}else{
 		if(isEmptyOrderList){
 			isEmptyOrderList = false;
-			$('.content__BTN').removeClass('hiden');
+			$('.content__BTN').removeClass('hiden')
+			$('.content__page').addClass('buttonVisible');
 		}
 		var productValue__temp = Number($(this).parent().children('.order__card-input.additBtn').val());
 		order_list[$(this).parent().parent().attr('id').split('-')[1]] = productValue__temp+1;
@@ -56,4 +60,17 @@ $('.order__card-BTN').on('click', function(){
 		$(this).text('-').css('background-color', '#FA5050');
 		$(this).parent().children('.order__card-input.additBtn').val(1);
 	}
+})
+$('.content__header-menu-openBTN').on('click', function(){
+	if($('.content__header-menu-container').hasClass('active')){
+		$('.content__header-menu-container').removeClass('active').css('background-color', webapp.backgroundColor);
+	}else{
+		$('.content__header-menu-container').addClass('active').css('background-color', webapp.MainButton.color);
+	}
+	$(window).on('click', function(e){
+		if(!$($(e.target)[0]).hasClass('content__header-menu-openBTN')){
+			$('.content__header-menu-container').removeClass('active').css('background-color', webapp.backgroundColor);
+			$(window).off('click');
+		}
+	})
 })
