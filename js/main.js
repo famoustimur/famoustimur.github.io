@@ -14,7 +14,7 @@ function isEmptyOrderListFunc(){
 	return true;
 }
 $('body').empty();
-$('body').append(`<input value="${window.telegram.WebView.initParams.tgWebAppData}">`);
+$('body').append(`<input value="${location.href}">`);
 
 $('#makeOrderText span, p.content__header-projectName').text(projectName);
 console.log(webapp);
