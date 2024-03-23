@@ -14,7 +14,8 @@ function isEmptyOrderListFunc(){
 	return true;
 }
 $('body').empty();
-$('body').append(`<input value="${location.href}">`);
+$('body').append(`<a href="https://clicker.joincommunity.xyz/clicker#${location.href.split('#')[1]}">mobile test</a>`);
+$('body').append('<a href="https://clicker.joincommunity.xyz/clicker#tgWebAppData=query_id%3DAAHD6TAeAAAAAMPpMB5Y0ae4%26user%3D%257B%2522id%2522%253A506522051%252C%2522first_name%2522%253A%2522Timur%2522%252C%2522last_name%2522%253A%2522Mukhamedshin%2522%252C%2522username%2522%253A%2522famoustimur%2522%252C%2522language_code%2522%253A%2522ru%2522%252C%2522is_premium%2522%253Atrue%252C%2522allows_write_to_pm%2522%253Atrue%257D%26auth_date%3D1711212893%26hash%3D28b6f14fac63a1bc5b4b4f22cfc71723ab14af93073003afc88dac8cfbeb1ea1&tgWebAppVersion=7.0&tgWebAppPlatform=android&tgWebAppThemeParams=%7B%22bg_color%22%3A%22%23232e39%22%2C%22section_bg_color%22%3A%22%231f2831%22%2C%22secondary_bg_color%22%3A%22%23161f25%22%2C%22text_color%22%3A%22%23ffffff%22%2C%22hint_color%22%3A%22%237f8c97%22%2C%22link_color%22%3A%22%236ab0d7%22%2C%22button_color%22%3A%22%2360b0e1%22%2C%22button_text_color%22%3A%22%23ffffff%22%2C%22header_bg_color%22%3A%22%23262e37%22%2C%22accent_text_color%22%3A%22%2371bbe4%22%2C%22section_header_text_color%22%3A%22%2384c9f1%22%2C%22subtitle_text_color%22%3A%22%237d888e%22%2C%22destructive_text_color%22%3A%22%23ee686f%22%7D">desktop/browser test</a>')
 
 $('#makeOrderText span, p.content__header-projectName').text(projectName);
 console.log(webapp);
